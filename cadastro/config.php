@@ -35,4 +35,4 @@ if (mysqli_query($db_conect, $query_cadastro)) {
 }
 
 // Fechando a conexão com o banco de dados
-mysqli_close($conn);
+mysqli_close($db_conect);

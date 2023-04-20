@@ -63,7 +63,7 @@
 <script>
   window.onload = setTimeout(redireciona, 3500);
   function redireciona() {
-    window.location.replace("index.php");
+    window.location.replace("login.php");
   }
 </script>
 
