@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
@@ -33,7 +33,7 @@
 </head>
 
 <body>
-    <a href="home.php" style="text-decoration:none; color: black">Voltar</a>
+    <a href="index.php" style="text-decoration:none; color: black">Voltar</a>
     <form action="testeLogin.php" method="post">
         <div class="tela-login">
             <h1>Login</h1>
