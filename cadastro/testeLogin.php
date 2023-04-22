@@ -3,6 +3,7 @@ session_start();
 
 if (empty($_POST['email']) || empty($_POST['senha'])) {
     header('Location: login.php');
+    exit;
 } else  if (isset($_POST['submit'])) {
     include_once('conexao.php');
     $email = $_POST['email'];
@@ -15,16 +16,18 @@ if (empty($_POST['email']) || empty($_POST['senha'])) {
     // Resultado da query
     $result = $db_conect->query($sql);
 
-    if(mysqli_num_rows($result) < 1) {
+    if (mysqli_num_rows($result) < 1) {
         unset($_SESSION['email']);
         unset($_SESSION['senha']);
         header('Location: login.php');
+        exit;
     } else {
         $_SESSION['email'] = $email;
         $_SESSION['senha'] = $senha;
         header('Location: sistema.php');
+        exit;
     }
-
 } else {
     header('Location: login.php');
+    exit;
 }
