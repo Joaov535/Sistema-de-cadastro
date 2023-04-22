@@ -8,7 +8,7 @@
 </head>
 
 <body>
-<a href="index.php" style="text-decoration:none; color: black">Voltar</a>
+<a href="home.php" style="text-decoration:none; color: black">Voltar</a>
 
   <div class="box">
     <form action="config.php" method="post">
